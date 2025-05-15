@@ -25,8 +25,19 @@
             max-height: 200px; /* Limits the height to prevent it from being too big */
     object-fit: cover; /* Ensures the image fits within the given space */
         }
+.image-container {
+    position: relative; /* Ensures absolute positioning works inside */
+    display: inline-block;
+    width: 100%; /* Keeps the image-container width consistent */
+}
 
-        .overlay-text {
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,7 +48,10 @@
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
+    text-align: center; /* Ensures proper centering */
+    width: 100%; /* Matches the width of the image */
 }
+
 
 
         /* Navigation styles */
