@@ -7,9 +7,14 @@
     <style>
         /* General styles */
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: black; /* Text color for all elements */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enables scrolling */
+
         }
     
         /* Header styles */
@@ -66,14 +71,18 @@
 
        
         /* Section styles */
+       
         section {
-            background-color: lightgreen; /* Light green section */
-            float: left; /* Allow it to sit beside the nav */
-            width: 75%; /* Occupies 3/4 of the page width */
-            height: calc(100vh - 60px); /* Full height minus header */
-            box-sizing: border-box;
-            padding: 20px;
-        }     
+    background-color: lightgreen;
+    float: left;
+    width: 75%;
+    min-height: 100vh; /* Ensure full viewport height */
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: auto; /* Enables scrolling for section */
+}
+
+
 
         
  /* Article box styles */
@@ -89,7 +98,7 @@
  /* Button box styles */
       
         button {
-            background-color:yellow; /* Light red article boxes */
+            background-color:brown; /* Light red article boxes */
             margin-bottom: 20px;
             padding: 10px;
             box-sizing: border-box;
@@ -97,7 +106,7 @@
             border-radius: 5px;
 }
 button:hover {
-  background-color:blue; /* Orange on hover */
+  background-color:pink; /* Orange on hover */
 }
         }
 
