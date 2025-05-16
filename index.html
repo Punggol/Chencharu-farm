@@ -11,6 +11,7 @@
     font-family: Arial, sans-serif;
     color: black;
     display: flex; /* Aligns nav and section side by side */
+    flex-direction: column; /* Ensures header stays at the top */
     height: 100vh; /* Full viewport height */
         }
     
@@ -54,6 +55,9 @@
     width: 100%; /* Matches the width of the image */
 }
 
+.container {
+    display: flex; /* Ensures nav and section sit side by side */
+    height: 100%; /* Adjusts height */
 
 
         /* Navigation styles */
@@ -74,7 +78,6 @@ nav {
         section {
     background-color: lightgreen;
     width: 75%; /* Ensures it stays beside nav */
-    min-height: 100vh; /* Keeps it from being too small */
     box-sizing: border-box;
     padding: 20px;
     overflow-y: auto; /* Enables scrolling */
