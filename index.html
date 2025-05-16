@@ -7,14 +7,11 @@
     <style>
         /* General styles */
         body {
-    margin: 0;
+     margin: 0;
     font-family: Arial, sans-serif;
     color: black;
-    display: flex;
-    flex-direction: column; /* Ensure elements stack vertically */
+    display: flex; /* Aligns nav and section side by side */
     height: 100vh; /* Full viewport height */
-    overflow-y: auto; /* Enables scrolling */
-
         }
     
         /* Header styles */
@@ -63,11 +60,12 @@
         
 nav {
     background-color: lightblue;
-    width: 25%;
+    width: 25%; /* Ensures it stays on the left */
     padding: 20px;
     box-sizing: border-box;
     height: 100vh; /* Full height */
-    overflow-y: auto; /* Allows scrolling within nav */
+    overflow-y: auto; /* Enables scrolling in nav */
+
 }
 
        
@@ -75,12 +73,12 @@ nav {
        
         section {
     background-color: lightgreen;
-    float: right;
-    width: 75%;
-    min-height: 100vh; /* Ensure full viewport height */
+    width: 75%; /* Ensures it stays beside nav */
+    min-height: 100vh; /* Keeps it from being too small */
     box-sizing: border-box;
     padding: 20px;
-    overflow-y: auto; /* Enables scrolling for section */
+    overflow-y: auto; /* Enables scrolling */
+
 }
 
 
@@ -99,7 +97,7 @@ nav {
  /* Button box styles */
       
         button {
-            background-color:brown; /* Light red article boxes */
+            background-color:blue; /* Light red article boxes */
             margin-bottom: 20px;
             padding: 10px;
             box-sizing: border-box;
@@ -107,7 +105,7 @@ nav {
             border-radius: 5px;
 }
 button:hover {
-  background-color:blue; /* Orange on hover */
+  background-color:pink; /* Orange on hover */
 }
         }
 
